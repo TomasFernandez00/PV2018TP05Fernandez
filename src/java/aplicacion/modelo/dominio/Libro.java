@@ -11,17 +11,17 @@ import java.io.Serializable;
  *
  * @author Tomas Fernandez EdM
  */
-public class Libro implements Serializable{
+public class Libro implements Serializable {
 
 	private String autor;
 	private String titulo;
-	private int precio;
-	private int isbn;
+	private String precio;
+	private String isbn;
 
 	public Libro() {
 	}
 
-	public Libro(String autor, String titulo, int precio, int isbn) {
+	public Libro(String autor, String titulo, String precio, String isbn) {
 		this.autor = autor;
 		this.titulo = titulo;
 		this.precio = precio;
@@ -36,22 +36,6 @@ public class Libro implements Serializable{
 		this.titulo = titulo;
 	}
 
-	public int getPrecio() {
-		return precio;
-	}
-
-	public void setPrecio(int precio) {
-		this.precio = precio;
-	}
-
-	public int getIsbn() {
-		return isbn;
-	}
-
-	public void setIsbn(int isbn) {
-		this.isbn = isbn;
-	}
-
 	/**
 	 * @return the autor
 	 */
@@ -64,5 +48,33 @@ public class Libro implements Serializable{
 	 */
 	public void setAutor(String autor) {
 		this.autor = autor;
+	}
+
+	/**
+	 * @return the precio
+	 */
+	public String getPrecio() {
+		return precio;
+	}
+
+	/**
+	 * @param precio the precio to set
+	 */
+	public void setPrecio(String precio) {
+		this.precio = precio;
+	}
+
+	/**
+	 * @return the isbn
+	 */
+	public String getIsbn() {
+		return isbn;
+	}
+
+	/**
+	 * @param isbn the isbn to set
+	 */
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
 	}
 }
